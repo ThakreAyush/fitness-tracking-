@@ -4,26 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+  /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling with RGBA background overlay */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('login-baground.jpg') no-repeat center center/cover;
+}
+
+/* Login container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Flexbox for image and login box */
+.login-content {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker black transparent background */
+    padding: 40px;
+    border-radius: 15px; /* Slightly rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhanced box shadow */
+    backdrop-filter: blur(5px); /* Blur effect */
+    transition: all 0.4s ease; /* Smooth transition */
+}
+
+/* Image styling */
+.login-image {
+    margin-right: 30px;
+}
+
+.login-image img {
+    width: 280px; /* Set the width for the image */
+    margin-top: 20%;
+    border-radius: 10px;
+}
+
+/* Login box styling */
+.login-box {
+    background-color: transparent; /* Transparent background for the login box */
+    padding: 60px;
+    width: 350px;
+    text-align: center;
+}
+
+/* Heading styling */
+h2 {
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Input box styling */
+.input-box {
+    margin-bottom: 40px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    outline: none;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for inputs */
+    transition: all 0.3s ease; /* Transition for hover effect */
+}
+
+/* Hover effect for inputs */
+.input-box input:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Adds shadow on hover */
+    background-color: rgba(255, 255, 255, 1); /* Fully opaque background on hover */
+}
+
+/* Forgot password link */
+.forgot-password {
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    color: #ffffffcc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+/* Login button styling */
+.login-btn button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for button */
+}
+
+/* Login button hover effect */
+.login-btn button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Button shadow on hover */
+}
+
+    </style>
 </head>
 <body>
-    <header>
-        <div class="login-bar">
-            <div class="logo-login"></div>
+    <!-- Centered Login Form -->
+    <div class="login-container">
+        <!-- Flexbox container for image and login box -->
+        <div class="login-content">
+            <!-- Image section -->
+            <div class="login-image">
+                <img src="bag-about.jpg" alt="Login Image">
+            </div>
+            
+            <!-- Login form section -->
+            <div class="login-box">
+                <h2>Login</h2>
+                <form>
+                    <div class="input-box">
+                        <input type="text" id="username" placeholder="Username" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" id="password" placeholder="Password" required>
+                    </div>
+                    <div class="forgot-password">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <div class="login-btn">
+                        <button type="submit">Log In</button>
+                    </div>
+                </form>
+            </div>
         </div>
-
-        <div class="log-baground">
-            <div class="bag-login"></div>
-        </div>
-
-
-
-       username password 
-               
-
-
-
-    </header>
-    
+    </div>
 </body>
 </html>
