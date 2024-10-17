@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN</title>
     <style>
-  /* Reset */
+  
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +13,6 @@
     font-family: Arial, sans-serif;
 }
 
-/* Body styling with RGBA background overlay */
 body {
     margin: 0;
     padding: 0;
@@ -24,7 +23,6 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('login-baground.jpg') no-repeat center center/cover;
 }
 
-/* Login container */
 .login-container {
     display: flex;
     justify-content: center;
@@ -33,38 +31,52 @@ body {
     height: 100vh;
 }
 
-/* Flexbox for image and login box */
+ 
 .login-content {
     display: flex;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.7); /* Darker black transparent background */
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 40px;
-    border-radius: 15px; /* Slightly rounded corners */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhanced box shadow */
-    backdrop-filter: blur(5px); /* Blur effect */
-    transition: all 0.4s ease; /* Smooth transition */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    transition: all 0.4s ease;
 }
 
-/* Image styling */
+ 
+.login-content:hover {
+    transform: translateY(-10px);  
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7); 
+}
+
+ 
 .login-image {
     margin-right: 30px;
 }
 
 .login-image img {
-    width: 280px; /* Set the width for the image */
+    width: 320px;
     margin-top: 20%;
     border-radius: 10px;
 }
 
-/* Login box styling */
+ 
 .login-box {
-    background-color: transparent; /* Transparent background for the login box */
+    background-color: rgba(255, 255, 255, 0.1);  
     padding: 60px;
     width: 350px;
     text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
 }
 
-/* Heading styling */
+ 
+.login-box:hover {
+    background-color: rgba(255, 255, 255, 0.2);  
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);  
+}
+
 h2 {
     color: #fff;
     margin-bottom: 50px;
@@ -73,7 +85,7 @@ h2 {
     letter-spacing: 2px;
 }
 
-/* Input box styling */
+ 
 .input-box {
     margin-bottom: 40px;
 }
@@ -86,17 +98,16 @@ h2 {
     background-color: rgba(255, 255, 255, 0.8);
     outline: none;
     font-size: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for inputs */
-    transition: all 0.3s ease; /* Transition for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    transition: all 0.3s ease;  
 }
 
-/* Hover effect for inputs */
-.input-box input:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Adds shadow on hover */
-    background-color: rgba(255, 255, 255, 1); /* Fully opaque background on hover */
+ .input-box input:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 1);
 }
 
-/* Forgot password link */
+ 
 .forgot-password {
     margin-bottom: 20px;
 }
@@ -108,11 +119,10 @@ h2 {
 }
 
 .forgot-password a:hover {
-    color: #ffcc00;
+    color: #000000;
     text-decoration: underline;
 }
-
-/* Login button styling */
+ 
 .login-btn button {
     width: 100%;
     padding: 12px;
@@ -122,28 +132,27 @@ h2 {
     color: white;
     font-size: 16px;
     cursor: pointer;
-    transition: all 0.3s ease; /* Smooth transition for button */
+    transition: all 0.3s ease;  
 }
 
-/* Login button hover effect */
+ 
 .login-btn button:hover {
     background-color: #0056b3;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Button shadow on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
     </style>
 </head>
-<body>
-    <!-- Centered Login Form -->
-    <div class="login-container">
-        <!-- Flexbox container for image and login box -->
+<body> 
+      <div class="login-container">
+        
         <div class="login-content">
-            <!-- Image section -->
+           
             <div class="login-image">
                 <img src="bag-about.jpg" alt="Login Image">
             </div>
             
-            <!-- Login form section -->
+    
             <div class="login-box">
                 <h2>Login</h2>
                 <form>
