@@ -11,6 +11,11 @@ body {
   color: #333;
 }
 
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  }
 
 
 header {
@@ -43,7 +48,7 @@ h2 {
 }
 
 .form-slot {
-  width: 43%;
+  width: 48%;
 }
 
 .form-slot h2 {
@@ -111,7 +116,6 @@ button:hover {
   font-size: 1rem;
   color: #555;
 }
-
 
 /* Responsive styles: Stack the forms vertically on smaller screens */
 @media (max-width: 768px) {
