@@ -5,16 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YOUR GOAL</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="yourday.css">
 </head>
 <body>
     <header>
         <div class="yourday-navbar">
             <div class="yourday-logo"></div>
         </div>
-
-
-
-
+        <div class="Container">
+                     <!-- Container for Journal and Fitness Goals Slots side by side -->
+                <div class="form-container">
+                    <!-- Journal Entry Slot -->
+                    <div class="form-slot journal-form">
+                        <form id="day-entry-form">
+                            <label for="date">Date:</label>
+                            <input type="date" id="date" name="date" required>
+        
+                            <label for="activity">What did you do today?</label>
+                            <textarea id="activity" name="activity" placeholder="Describe your activities..." required></textarea>
+        
+                            <label for="mood">How did you feel today?</label>
+                            <input type="text" id="mood" name="mood" placeholder="How was your mood?" required>
+        
+                            <label for="goal">Daily Goal:</label>
+                            <input type="text" id="goal" name="goal" placeholder="Enter your goal for the day..." required>
+        
+                            <label for="goal-achieved">Did you achieve it?</label>
+                            <select id="goal-achieved" name="goal-achieved" required>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+        
+                                  </form>
+                    </div>
+        
+                    <!-- Fitness Goals Slot -->
+                    <div class="form-slot fitness-form">
+                        <form id="fitness-goals-form">
+                            <label for="water-goal">Water Intake Goal (in glasses):</label>
+                            <input type="number" id="water-goal" name="water-goal" placeholder="Enter your water intake goal (glasses)" required>
+        
+                            <label for="calories-goal">Calories Goal (in kcal):</label>
+                            <input type="number" id="calories-goal" name="calories-goal" placeholder="Enter your calories goal (kcal)" required>
+        
+                            <label for="exercise-goal">Exercise Duration Goal (in minutes):</label>
+                            <input type="number" id="exercise-goal" name="exercise-goal" placeholder="Enter your exercise duration goal (minutes)" required>
+        
+                            <label for="steps-goal">Steps Goal (in steps):</label>
+                            <input type="number" id="steps-goal" name="steps-goal" placeholder="Enter your steps goal (steps)" required>
+        
+                            <label for="sleep-goal">Sleep Duration Goal (in hours):</label>
+                            <input type="number" id="sleep-goal" name="sleep-goal" placeholder="Enter your sleep duration goal (hours)" required>
+        
+                            <label for="protein-goal">Protein Intake Goal (in grams):</label>
+                            <input type="number" id="protein-goal" name="protein-goal" placeholder="Enter your protein intake goal (grams)" required>
+        
+                              </form>
+                    </div>
+                    
+                </div>
+                <button type="submit">Save Entry & Fitness Goals</button>
+                    
+                <div id="journal-entries">
+                    <!-- Entries will be dynamically added here -->
+                </div>
+        </div>
+            <script src="yourday.js"></script>
 
     </header>
     
