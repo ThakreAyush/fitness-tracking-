@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: gray;
+  background-color: #acacac;
   color: #333;
 }
 
@@ -64,15 +64,16 @@ form {
 
 label {
   font-weight: bold;
+  text-align: left;
   margin-bottom: 8px;
 }
 
 input, textarea, select {
-  background-color: rgb(148, 148, 148);
+  background-color: #e0e0e0;
   padding: 10px;
   margin-bottom: 15px;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid #e0e0e0;
   font-size: 1rem;
 }
 
