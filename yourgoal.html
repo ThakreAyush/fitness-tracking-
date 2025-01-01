@@ -4,9 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YOUR GOAL</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="goal.css">
+    <script defer src= "goal.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
-<body>
+<body>\
+
+
+    <header>
+        <h1><i class="fas fa-bullseye"></i> Your Goal</h1>
+    </header>
+    <main>
+        <section id="goal-input" class="card animate-up">
+            <h2><i class="fas fa-pencil-alt"></i> Set Your Goal</h2>
+            <form id="goal-form">
+                <div class="form-group">
+                    <label for="goal-title"><i class="fas fa-edit"></i> Goal Title:</label>
+                    <input type="text" id="goal-title" placeholder="Enter your goal" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="category"><i class="fas fa-list"></i> Category:</label>
+                        <select id="category" required>
+                            <option value="">Select category</option>
+                            <option value="fitness">Fitness</option>
+                            <option value="education">Education</option>
+                            <option value="work">Work</option>
+                            <option value="personal">Personal</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="priority"><i class="fas fa-flag"></i> Priority:</label>
+                        <select id="priority" required>
+                            <option value="">Select priority</option>
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="start-date"><i class="fas fa-calendar-alt"></i> Start Date:</label>
+                        <input type="date" id="start-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="end-date"><i class="fas fa-calendar-check"></i> End Date:</label>
+                        <input type="date" id="end-date" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="reminder-date"><i class="fas fa-bell"></i> Reminder Date:</label>
+                        <input type="datetime-local" id="reminder-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="reminder-type"><i class="fas fa-clock"></i> Reminder Type:</label>
+                        <select id="reminder-type">
+                            <option value="none">No reminder</option>
+                            <option value="once">One-time</option>
+                            <option value="daily">Daily</option>
+                            <option value="weekly">Weekly</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary"><i class="fas fa-plus-circle"></i> Add Goal</button>
+            </form>
+        </section>
+    </main>
+        <section id="goals-list" class="card animate-up">
+      <main>      
+            <div class="section-header">
+                <h2><i class="fas fa-tasks"></i> Your Goals</h2>
+                <div class="filters">
+                    <select id="filter-category">
+                        <option value="all">All Categories</option>
+                        <option value="fitness">Fitness</option>
+                        <option value="education">Education</option>
+                        <option value="work">Work</option>
+                        <option value="personal">Personal</option>
+                    </select>
+                    <select id="filter-priority">
+                        <option value="all">All Priorities</option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+            </div>
+            <div id="goals-container"></div>
+        </section>
+      </main>
+
+    <div id="toast" class="toast"></div>
     
+    <footer>
+        <p>&copy; 2025 Goal Tracker - Achieve More Every Day</p>
+    </footer>
 </body>
 </html>
