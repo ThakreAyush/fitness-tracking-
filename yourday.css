@@ -25,7 +25,7 @@ header {
 
 header h1 {
   font-size: 2.5rem;
-  color: #4CAF50;
+  color: #737373;
 }
 
 header p {
@@ -35,7 +35,7 @@ header p {
 
 h2 {
   margin-top: 30px;
-  color: #4CAF50;
+  color: #000000;
 }
 
 /* Container for the two forms (Journal and Fitness Goals) side by side */
@@ -84,7 +84,7 @@ textarea {
 
 button {
   padding: 10px;
-  background-color: #4CAF50;
+  background-color: #696969;
   color: white;
   border: 2px solid rgb(41, 41, 41);
   border-radius: 5px;
@@ -94,7 +94,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #656565;
 }
 
 #journal-entries {
@@ -103,7 +103,7 @@ button:hover {
 
 .entry {
   background-color: gray;
-  border-left: 5px solid #4CAF50;
+  border-left: 5px solid #4e4e4e;
   padding: 15px;
   margin-bottom: 15px;
 }

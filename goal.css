@@ -25,8 +25,25 @@ body {
     line-height: 1.6;
     min-height: 100vh;
 }
+ 
 
-.container {
+.navbar{
+    background-color: black;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goal-logo{
+    background-image: url(g-title.png);
+    background-size: cover;
+    height: 55px;
+    width: 300px;
+}
+
+
+ .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
