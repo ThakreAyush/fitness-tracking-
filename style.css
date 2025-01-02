@@ -709,7 +709,7 @@
 }
 
 .goal-container {
-    width: calc(80% - 40px);
+    width: calc(60% - 40px);
     padding: 25px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
@@ -736,7 +736,8 @@
 
 /* Slot styling for each form */
 .slot {
-    width: 48%; /* Adjust width of each form */
+    width: 43%;
+    margin-right: 10px; /* Adjust width of each form */
 }
 
 /* Form group styling */
