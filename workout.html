@@ -99,43 +99,56 @@
             </div>
         </div>
 
-        <div class="goal" style="width: calc(100vw - 57px); padding: 20px; display: flex; justify-content: center; background-image: url('login-baground.jpg'); background-size: cover; background-position: center; position: relative;">
-            <div style="width: calc(80% - 40px); padding: 25px; background-color: rgba(255, 255, 255, 0.5); border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); border: 1px solid rgba(255, 255, 255, 0.5); backdrop-filter: blur(5px);">
-                <h2 style="text-align: center; color: #333; font-size: 28px; margin-bottom: 25px;">Set Your Daily Goals</h2>
-                <form>
-                    <div style="margin-bottom: 20px;">
-                        <label for="workout-type" style="display: block; margin-bottom: 5px; font-weight: bold; font-size: 16px; color: #555;">Workout Type:</label>
-                        <input type="text" id="workout-type" placeholder="e.g., Running, Yoga" style="width: 100%; padding: 12px; font-size: 14px; border: 1px solid #a2a2a2; border-radius: 6px; transition: border 0.3s ease-in-out;" onfocus="this.style.borderColor='#28a745';" onblur="this.style.borderColor='#ddd';">
+        <div class="goal">
+            <div class="goal-container">
+                <h2>Set Your Daily Goals</h2>
+                <div class="slots-container">
+                    <div class="slot">
+                        <form>
+                            <div class="form-group">
+                                <label for="workout-type">Workout Type:</label>
+                                <input type="text" id="workout-type" placeholder="e.g., Running, Yoga">
+                            </div>
+                            <div class="form-group">
+                                <label for="duration">Duration (minutes):</label>
+                                <input type="number" id="duration" placeholder="e.g., 30">
+                            </div>
+                            <div class="form-group">
+                                <label for="calories">Target Calories:</label>
+                                <input type="number" id="calories" placeholder="e.g., 500">
+                            </div>
+                           
+                        </form>
                     </div>
-                    <div style="margin-bottom: 20px;">
-                        <label for="duration" style="display: block; margin-bottom: 5px; font-weight: bold; font-size: 16px; color: #555;">Duration (minutes):</label>
-                        <input type="number" id="duration" placeholder="e.g., 30" style="width: 100%; padding: 12px; font-size: 14px; border: 1px solid #a2a2a2; border-radius: 6px; transition: border 0.3s ease-in-out;" onfocus="this.style.borderColor='#28a745';" onblur="this.style.borderColor='#ddd';">
+                    <div class="slot">
+                        <form>
+                            <div class="form-group">
+                                <label for="zumba">Zumba (minutes):</label>
+                                <input type="number" id="zumba" placeholder="e.g., 30">
+                            </div>
+                            <div class="form-group">
+                                <label for="meditation">Meditation (minutes):</label>
+                                <input type="number" id="meditation" placeholder="e.g., 30">
+                            </div>
+                            <div class="form-group">
+                                <label for="office-work">Office Work (minutes):</label>
+                                <input type="number" id="office-work" placeholder="e.g., 480">
+                            </div>
+                            <div class="form-group">
+                                <label for="other-work">Other Work (minutes):</label>
+                                <input type="number" id="other-work" placeholder="e.g., 30">
+                            </div>
+                           
+                        </form>
+                       
                     </div>
-                    <div style="margin-bottom: 20px;">
-                        <label for="calories" style="display: block; margin-bottom: 5px; font-weight: bold; font-size: 16px; color: #555;">Target Calories:</label>
-                        <input type="number" id="calories" placeholder="e.g., 500" style="width: 100%; padding: 12px; font-size: 14px; border: 1px solid #a2a2a2; border-radius: 6px; transition: border 0.3s ease-in-out;" onfocus="this.style.borderColor='#28a745';" onblur="this.style.borderColor='#ddd';">
-                    </div>
-                    <div style="margin-bottom: 20px;">
-                        <label for="zumba" style="display: block; margin-bottom: 5px; font-weight: bold; font-size: 16px; color: #555;">Zumba (minutes):</label>
-                        <input type="number" id="zumba" placeholder="e.g., 30" style="width: 100%; padding: 12px; font-size: 14px; border: 1px solid #a2a2a2; border-radius: 6px; transition: border 0.3s ease-in-out;" onfocus="this.style.borderColor='#28a745';" onblur="this.style.borderColor='#ddd';">
-                    </div>
-                    <div style="margin-bottom: 20px;">
-                        <label for="meditation" style="display: block; margin-bottom: 5px; font-weight: bold; font-size: 16px; color: #555;">Meditation (minutes):</label>
-                        <input type="number" id="meditation" placeholder="e.g., 30" style="width: 100%; padding: 12px; font-size: 14px; border: 1px solid #a2a2a2; border-radius: 6px; transition: border 0.3s ease-in-out;" onfocus="this.style.borderColor='#28a745';" onblur="this.style.borderColor='#ddd';">
-                    </div>
-                    <div style="margin-bottom: 20px;">
-                        <label for="office-work" style="display: block; margin-bottom: 5px; font-weight: bold; font-size: 16px; color: #555;">Office Work (minutes):</label>
-                        <input type="number" id="office-work" placeholder="e.g., 480" style="width: 100%; padding: 12px; font-size: 14px; border: 1px solid #a2a2a2; border-radius: 6px; transition: border 0.3s ease-in-out;" onfocus="this.style.borderColor='#28a745';" onblur="this.style.borderColor='#ddd';">
-                    </div>
-                    <div style="margin-bottom: 20px;">
-                        <label for="other-work" style="display: block; margin-bottom: 5px; font-weight: bold; font-size: 16px; color: #555;">Other Work (minutes):</label>
-                        <input type="number" id="other-work" placeholder="e.g., 30" style="width: 100%; padding: 12px; font-size: 14px; border: 1px solid #a2a2a2; border-radius: 6px; transition: border 0.3s ease-in-out;" onfocus="this.style.borderColor='#28a745';" onblur="this.style.borderColor='#ddd';">
-                    </div>
-                    <div style="margin-bottom: 20px;">
-                        <button type="submit" style="width: 100%; padding: 12px; background-color: #776f6f; color: rgb(218, 218, 218); font-size: 16px; font-weight: bold; border: none; border-radius: 6px; cursor: pointer;">Set Goal</button>
-                    </div>
-                </form>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Set Goal</button>
+                </div>
             </div>
+        </div>
+        
         </div>        
     </header> 
 </body>

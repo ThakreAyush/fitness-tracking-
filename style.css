@@ -697,7 +697,92 @@
 
 
 
+.goal {
+    width: calc(100vw - 57px);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-image: url('login-baground.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
 
+.goal-container {
+    width: calc(80% - 40px);
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+/* Heading styling */
+.goal-container h2 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container for two slots */
+.slots-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Slot styling for each form */
+.slot {
+    width: 48%; /* Adjust width of each form */
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Input field styling */
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #a2a2a2;
+    border-radius: 6px;
+    transition: border 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+    border-color: #28a745;
+}
+
+.form-group input:blur {
+    border-color: #ddd;
+}
+
+/* Button styling */
+.form-group button {
+    width: 100%;
+    padding: 12px;
+    background-color: #776f6f;
+    color: rgb(218, 218, 218);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
 
 
 
